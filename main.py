@@ -13,8 +13,8 @@ from PIL import Image
 mouse = MouseController()
 keyboard = KeyboardController()
 running = False
-pytesseract.tesseract_cmd = "C:Tesseract-OCR/tesseract.exe"
-path = "C:screenshot.png"
+pytesseract.tesseract_cmd = "Tesseract-OCR/tesseract.exe"
+path = "screenshot.png"
 left, top, bottom, right = 490, 470, 600, 1600
 correct_chars = "abcdefghijklmnopqrstuvwxyz "
 print("Started.")
