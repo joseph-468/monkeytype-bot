@@ -66,7 +66,6 @@ def type_sentence():
     print("".join(sentence))
     # Type text
     delay = 3000 / typing_speed * 2
-    print(delay)
     for char in sentence:
         if not running:
             break
