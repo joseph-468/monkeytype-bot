@@ -1,0 +1,1 @@
+default settings + change config when setting crop coords

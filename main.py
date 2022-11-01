@@ -18,6 +18,8 @@ left, top, bottom, right = coords["left"], coords["top"], coords["bottom"], coor
 pytesseract.tesseract_cmd = config["tesseractPath"]
 path = config["screenshotPath"]
 correct_chars = config["correctChars"]
+typing_settings = config["typingSettings"][0]
+typing_speed = (typing_settings["WPM"] - 1) * 1000
 
 # Setup
 mouse = MouseController()
@@ -61,15 +63,16 @@ def type_sentence():
     sentence = pytesseract.image_to_string(img).lower()
     sentence = sentence.replace("-", "")
     sentence = " ".join("".join(i for i in sentence.replace("\n", " ") if i in correct_chars).split())
-    # Type text
     print("".join(sentence))
+    # Type text
+    delay = 3000 / typing_speed * 2
+    print(delay)
     for char in sentence:
         if not running:
             break
-        delay = random.randint(1, 4) / 100
         time.sleep(delay)
         keyboard.press(char)
-        time.sleep(delay / 10)
+        time.sleep(delay)
         keyboard.release(char)
     running = False
 

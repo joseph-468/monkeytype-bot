@@ -6,6 +6,11 @@
         "right": 1600
         }],
     
+    "typingSettings": [{
+        "WPM": 240,
+        "randomness": 10 
+    }],
+
     "screenshotPath": "screenshot.png",
     "tesseractPath": "Tesseract-OCR/tesseract.exe",
     "correctChars": "abcdefghijklmnopqrstuvwxyz "
