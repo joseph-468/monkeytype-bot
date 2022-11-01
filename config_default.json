@@ -6,8 +6,7 @@
     "right": 1600
   },
   "typingSettings": {
-    "WPM": 1000,
-    "randomness": 10
+    "WPM": 1000
   },
   "screenshotPath": "screenshot.png",
   "tesseractPath": "Tesseract-OCR/tesseract.exe",
