@@ -5,4 +5,4 @@ Change the screenshot path, Tesseract path and WPM in the config file. You can a
 # How to use
 Esc closes the program, Del starts typing - you can press it again to stop typing.
 PageUp sets the top left text boundary, PageDown sets the bottom right boundary. You can change them in the main.py file if you know what you're doing.
-If the bot makes a lot of errors make sure you have a readable font, clear background and remove the carat.
+If the bot makes a lot of errors make sure you have a readable font, clear background and remove the caret.
