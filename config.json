@@ -1,13 +1,12 @@
 {
   "screenshotSize": {
-    "left": 510,
-    "top": 399,
-    "bottom": 517,
-    "right": 603
+    "left": 470,
+    "top": 490,
+    "bottom": 600,
+    "right": 1600
   },
   "typingSettings": {
-    "WPM": 1000,
-    "randomness": 10
+    "WPM": 1000
   },
   "screenshotPath": "screenshot.png",
   "tesseractPath": "Tesseract-OCR/tesseract.exe",
