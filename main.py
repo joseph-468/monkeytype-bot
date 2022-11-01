@@ -1,23 +1,29 @@
 from pynput.keyboard import *
 from pynput.keyboard import Controller as KeyboardController
 from pynput.mouse import Controller as MouseController
+from pytesseract import pytesseract
+import pyautogui
+from PIL import Image
 import time
 import random
 import threading
 import cv2
-from pytesseract import pytesseract
-import pyautogui
-from PIL import Image
+import json
+
+# Config
+with open("config.json") as file:
+    config = json.load(file)
+coords = config["screenshotSize"][0]
+left, top, bottom, right = coords["left"], coords["top"], coords["bottom"], coords["right"]
+pytesseract.tesseract_cmd = config["tesseractPath"]
+path = config["screenshotPath"]
+correct_chars = config["correctChars"]
 
 # Setup
 mouse = MouseController()
 keyboard = KeyboardController()
 running = False
-pytesseract.tesseract_cmd = "Tesseract-OCR/tesseract.exe"
-path = "screenshot.png"
-left, top, bottom, right = 490, 470, 600, 1600
-correct_chars = "abcdefghijklmnopqrstuvwxyz "
-print("Started.")
+print("Started Typing Bot.")
 
 
 def on_press(key):

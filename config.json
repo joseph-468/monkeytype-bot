@@ -1,0 +1,12 @@
+{
+    "screenshotSize": [{
+        "left": 490,
+        "top": 470,
+        "bottom": 600,
+        "right": 1600
+        }],
+    
+    "screenshotPath": "screenshot.png",
+    "tesseractPath": "Tesseract-OCR/tesseract.exe",
+    "correctChars": "abcdefghijklmnopqrstuvwxyz "
+}
