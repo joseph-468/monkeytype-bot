@@ -1,5 +1,5 @@
 # MonkeytypeBot
-A very rough typing bot for Monkeytype. Only works on the 10 and 25 word mode right now though.
+A very rough typing bot for Monkeytype. Only works as long as all text is on screen. 
 Change the screenshot path, Tesseract path and WPM in the config file. You can also reset to default settings.
 
 # How to use
